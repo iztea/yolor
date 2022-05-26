@@ -15,7 +15,7 @@ tqdm
 easydict
 faiss-cpu
 streamlit
-faiss
+
 
 
 # logging -------------------------------------
