@@ -309,6 +309,7 @@ def load_yolor_and_process_each_frame(vid_name, enable_GPU, confidence, assigned
 
         # Process detections
         for i, det in enumerate(pred):  # detections per image
+	    p, s, im0= path, '', im0s
 
             save_path = str(Path(out) / Path(p).name)
             txt_path = str(Path(out) / Path(p).stem) + ('_%g' % dataset.frame if dataset.mode == 'video' else '')
